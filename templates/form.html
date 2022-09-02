@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Create two equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 50%;
+          padding: 10px;
+          }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        </style>
+        </head>
+    <body>   
+    <p align="center">
+        <img src="{{url_for('static', filename='StoryGeneratorTitle.png')}}" alt="centered image" />
+    </p> 
+    <form action="/data" method = "POST">
+    <div class="row">
+        <div class="column" style="background-color:#aaa;">
+            <p>Noun <input type = "text" name = "Noun" /></p>
+            <p>Adjective <input type = "text" name = "Adjective" /></p>
+            <p>Noun <input type = "text" name = "Noun" /></p>
+            <p>Choose A Number <input type = "text" name = "Choose A Number" /></p>
+            <p>Adjective <input type = "text" name = "Adjective" /></p>
+            <p>Adverb ending in -ly <input type = "text" name = "Adverb ending in -ly" /></p>
+            <p>Adjective <input type = "text" name = "Adjective" /></p>
+            <p>Place Name <input type = "text" name = "Place Name" /></p>
+            <p>Place Name <input type = "text" name = "Place Name" /></p>
+            <p>Small Number <input type = "text" name = "Small Number" /></p>
+            <p>Celebrity Name <input type = "text" name = "Celebrity Name" /></p>
+            <p>Noun For Type of Profession <input type = "text" name = "Noun For Type of Profession" /></p>
+            <p>Noun <input type = "text" name = "Noun" /></p>
+            <p>Body Part <input type = "text" name = "Body Part" /></p>
+            <p>Adjective <input type = "text" name = "Adjective" /></p>
+            <p>Adverb <input type = "text" name = "Adverb" /></p>
+            <p>Noun <input type = "text" name = "Noun" /></p>
+            <p>Another Noun <input type = "text" name = "Another Noun" /></p>
+            <p>Adjective <input type = "text" name = "Adjective" /></p>
+        </div>
+        <div class="column" style="background-color:#bbb;">
+            <p>Small Number <input type = "text" name = "Small Number" /></p>
+            <p>Large Number <input type = "text" name = "Large Number" /></p>
+            <p>Noun <input type = "text" name = "Noun" /></p>
+            <p>One More Noun <input type = "text" name = "One More Noun" /></p>
+            <p>Another Noun <input type = "text" name = "Another Noun" /></p>
+            <p>Adjective <input type = "text" name = "Adjective" /></p>
+            <p>Adjective <input type = "text" name = "Adjective" /></p>
+            <p>Adjective <input type = "text" name = "Adjective" /></p>
+            <p>Adjective <input type = "text" name = "Adjective" /></p>        
+            <p>Noun <input type = "text" name = "Noun" /></p>      
+            <p>Any Weather Term <input type = "text" name = "Any Weather Term" /></p>
+            <p>Animal <input type = "text" name = "Animal" /></p>
+            <p>Bird <input type = "text" name = "Bird" /></p>
+            <p>Food <input type = "text" name = "Food" /></p>
+            <p>Country <input type = "text" name = "Country" /></p>
+            <p>Body Part <input type = "text" name = "Body Part" /></p>
+            <p>Adverb ending in ly <input type = "text" name = "Adverb ending in ly" /></p>
+            <p>Adjective <input type = "text" name = "Adjective" /></p>
+        </div>
+      </div>
+      <p><input type = "submit" value = "Submit" /></p>
+    </form>
+    </body>
+</html>
